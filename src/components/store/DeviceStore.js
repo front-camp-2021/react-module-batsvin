@@ -24,7 +24,38 @@ export default class DeviceStore {
          { id: 8, name: 'iPhone Cases & Clips', quantity: 456 },
          { id: 9, name: 'Small Kitchen Appliances', quantity: 55 }
       ]
-      this._devices = []
+      this._devices = [
+         {
+            "id": "76w0hz7015kkr9kjkav",
+            "images": "https://content2.rozetka.com.ua/goods/images/big_tile/163399632.jpg",
+            "title": "Ноутбук Acer Aspire 3 ",
+            "rating": 2.89,
+            "price": 15999,
+            "category": "laptops",
+            "brand": "acer"
+         },
+         {
+            "id": "qeagrlm9lrkr9kjkav",
+            "images": "https://content1.rozetka.com.ua/goods/images/big_tile/178060622.jpg",
+            "title": "Ноутбук Acer Aspire 7 ",
+            "rating": 1.96,
+            "price": 21500,
+            "category": "laptops",
+            "brand": "acer"
+         },
+         {
+            "id": "4g0lv7ii7ytkr9kjkav",
+            "images":
+               "https://content.rozetka.com.ua/goods/images/big_tile/30872664.jpg",
+
+            "title": "Ноутбук Apple MacBook 13",
+            "rating": 1.57,
+            "price": 33999,
+            "category": "laptops",
+            "brand": "apple"
+         }
+
+      ]
       this._selectedType = {}
       this._selectedBrand = {}
       makeAutoObservable(this)

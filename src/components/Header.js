@@ -1,9 +1,11 @@
 import React from "react";
+import logo from "../img/logo.png"
+import { SHOP_ROUTE } from "../utils/consts";
 
 const Header = () => {
    return (
-      <header>
-         <img src="img/logo.png" alt="" ></img>
+      <header to={SHOP_ROUTE}>
+         <img src={logo} alt="" />
          <h1>Online Store</h1>
       </header>
    );
