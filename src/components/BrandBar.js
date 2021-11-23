@@ -12,13 +12,13 @@ const BrandBar = observer(() => {
          {
             device.brands.map(brand =>
                <>
-                  <div class="aside__category-element" key={brand.id}>
+                  <div class="aside__category-element" key={brand}>
                      <div class="aside__category-label">
-                        <input type="checkbox" id={brand.id} name={brand.id} onClick={() => device.setSelectedBrand(brand)} />
-                        <label for={brand.id} >
-                           <span>{brand.name}</span>
+                        <input type="checkbox" id={brand} name={brand} onClick={() => device.setSelectedBrand(brand)} />
+                        <label for={brand} >
+                           <span>{brand}</span>
                         </label>
-                     </div><span>{brand.quantity}</span>
+                     </div><span>1</span>
                   </div><br />
                </>)
          }

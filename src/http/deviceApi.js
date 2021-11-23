@@ -1,14 +1,16 @@
-import { $host } from "./index"
+import axios from 'axios';
 
 export const fetchBrands = async () => {
-   const { data } = await $host.get('api/brands')
+   const { data } = await axios.get('http://localhost:3000/brands')
    return data
 }
 export const fetchCategories = async () => {
-   const { data } = await $host.get('api/categories')
+   const { data } = await axios.get('http://localhost:3000/categories')
    return data
 }
-export const fetchProducts = async () => {
-   const { data } = await $host.get('api/products')
+export const fetchProducts = async (page, limit = 9) => {
+   const { data } = await axios.get('http://localhost:3000/products', {
+      params: { page, limit }
+   })
    return data
 }

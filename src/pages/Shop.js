@@ -16,8 +16,12 @@ const Shop = observer(() => {
    useEffect(() => {
       fetchBrands().then(data => device.setBrands(data))
       fetchCategories().then(data => device.setCategories(data))
-      fetchProducts().then(data => device.setProducts(data))
+      fetchProducts(1, 9).then(data =>
+         device.setProducts(data),
+         device.setTotalCount(100)
+      )
    })
+
    return (
       <main>
          <aside class="aside">
@@ -46,7 +50,6 @@ const Shop = observer(() => {
             <Search />
             <CardList />
          </section>
-
       </main>
    );
 })

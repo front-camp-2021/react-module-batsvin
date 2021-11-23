@@ -11,13 +11,13 @@ const TypeBar = observer(() => {
          {
             device.types.map(type =>
                <>
-                  <div class="aside__category-element" key={type.id}>
+                  <div class="aside__category-element" key={type}>
                      <div class="aside__category-label">
-                        <input type="checkbox" id={type.id} name={type.id} onClick={() => device.setSelectedType(type)} />
-                        <label for={type.id}>
-                           <span>{type.name}</span>
+                        <input type="checkbox" id={type} name={type} onClick={() => device.setSelectedType(type)} />
+                        <label for={type}>
+                           <span>{type}</span>
                         </label>
-                     </div><span>{type.quantity}</span>
+                     </div><span>2</span>
                   </div><br />
                </>)
          }

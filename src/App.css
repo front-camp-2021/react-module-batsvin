@@ -389,6 +389,8 @@ header img {
   color: #2c2c2c;
   padding-bottom: 1px;
   margin: 0;
+  height: 38px;
+  overflow: hidden;
 }
 .main-cards__container .card__text span {
   font-style: normal;
@@ -405,9 +407,10 @@ header img {
   display: flex;
 }
 .pagination {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .pagination a {
   color: black;
   float: left;
@@ -416,20 +419,17 @@ header img {
   border: 1px solid #ddd;
   border-radius: 50%;
 }
-
 .pagination a.active {
   background-color: #7e72f2;
   color: white;
   border: 1px solid #7e72f2;
 }
-
 .pagination a:hover:not(.active) {
   background-color: #ddd;
 }
-
 @media screen and (min-device-width: 1200px) and (max-device-width: 2400px) and (-webkit-min-device-pixel-ratio: 1) {
   .aside {
-    width: 30%;
+    width: 400px;
   }
   .card-background {
     width: 33.33%;
@@ -491,4 +491,3 @@ header img {
     margin: 0 10px 15px 10px;
   }
 }
-/*# sourceMappingURL=style.css.map */

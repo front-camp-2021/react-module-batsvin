@@ -4,13 +4,17 @@ import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './components/AppRouter';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
+import Pages from './components/pages/pages';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
-      <NavBar />
-      <AppRouter />
+      <div class='container'>
+        <Header />
+        <NavBar />
+        <AppRouter />
+        <Pages />
+      </div>
     </BrowserRouter>
   );
 }

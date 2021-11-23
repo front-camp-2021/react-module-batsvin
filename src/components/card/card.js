@@ -6,7 +6,7 @@ const Card = ({ device }) => {
       <div class="card-background">
          <section class="card">
             <div class="card__img">
-               <div class="card__img-padding"><img src={device.img} alt={device.brand}></img></div>
+               <div class="card__img-padding"><img src={device.images[0]} alt={device.brand}></img></div>
             </div>
             <header class="card__header">
                <button class="card__rating">{device.rating}<svg width="15" height="14" viewBox="0 0 15 14" fill="none"
@@ -19,8 +19,6 @@ const Card = ({ device }) => {
             </header>
             <article class="card__text">
                <h3>{device.title}</h3>
-               <span>Опис Lorem ipsum dolor sit amet.
-               </span>
             </article>
             <footer class="card__footer">
                <button class="card__wishlists"><svg width="18" height="15" viewBox="0 0 18 15" fill="none"
