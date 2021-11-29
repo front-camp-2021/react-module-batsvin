@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f9f9f9;
+  font-family: Montserrat;
+  height: 100%;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background: #7e72f2;
+  color: #fff;
+  border: 0;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-device-width: 1200px) and (max-device-width: 2400px) and (-webkit-min-device-pixel-ratio: 1) {
+  .aside {
+    width: 400px;
+  }
+  .card-background {
+    width: 33.33%;
+  }
+  .main-cards {
+    width: 70%;
+  }
+  .main-cards__search {
+    margin-right: 30px;
+  }
+  .cards-header {
+    padding-right: 30px;
+  }
+  .card {
+    margin: 0 30px 40px 0;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 1) {
+  .aside {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
   }
-  to {
-    transform: rotate(360deg);
+  .aside__header {
+    padding: 0 5px 0 5px;
+  }
+  .card-background {
+    width: 50%;
+  }
+  .main-cards {
+    width: 100%;
+  }
+  .main-cards__search {
+    margin: 10px;
+  }
+  .card {
+    margin: 0 10px 15px 10px;
+  }
+}
+@media only screen and (min-device-width: 310px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .aside {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .aside__aside-header {
+    padding: 0 2px 0 2px;
+  }
+  .card-background {
+    width: 100%;
+  }
+  .main-cards {
+    width: 100%;
+  }
+  .main-cards__search {
+    margin: 10px;
+  }
+  .card {
+    margin: 0 10px 15px 10px;
   }
 }

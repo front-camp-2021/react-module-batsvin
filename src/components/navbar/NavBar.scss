@@ -1,0 +1,24 @@
+.nav {
+   &__breadcrumb {
+      padding: 1px 1px;
+      list-style: none;
+      li {
+         display: inline;
+         font-size: 14px;
+         line-height: 17px;
+      }
+      li + li:before {
+         padding: 8px;
+         color: black;
+         content: ">>";
+      }
+      li a {
+         color: #7e72f2;
+         text-decoration: none;
+      }
+      li a:hover {
+         color: #7e72f2;
+         text-decoration: underline;
+      }
+   }
+}

@@ -1,11 +1,18 @@
-import React from "react";
+
+import { createContext } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import DeviceStore from "./components/store/DeviceStore";
 import "./index.css";
 
+export const Context = createContext(null)
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Context.Provider value={{
+    device: new DeviceStore(),
+  }}>
     <App />
-  </React.StrictMode>,
+
+  </Context.Provider>,
   document.getElementById("root")
 );
