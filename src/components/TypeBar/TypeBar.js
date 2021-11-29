@@ -2,7 +2,8 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { useContext } from "react/cjs/react.development";
-import { Context } from "../index";
+import { Context } from "../../index";
+import styles from "./TypeBar.scss"
 
 const TypeBar = observer(() => {
    const { device } = useContext(Context)

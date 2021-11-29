@@ -1,15 +1,16 @@
 import { observer } from "mobx-react-lite";
 import React, { useEffect } from "react";
 import { useContext } from "react/cjs/react.development";
-import { Context } from "..";
-import BrandBar from "../components/BrandBar";
-import CardList from "../components/CardList";
-import MainHeader from "../components/MainHeader";
-import MyltiRange from "../components/MultiRange";
-import Pages from "../components/pages/pages";
-import Search from "../components/Search";
-import TypeBar from "../components/TypeBar";
-import { fetchBrands, fetchCategories, fetchProducts } from "../http/deviceApi";
+import { Context } from "../..";
+import BrandBar from "../../components/BrandBar/BrandBar";
+import CardList from "../../components/CardList/CardList";
+import MainHeader from "../../components/MainHeader/MainHeader";
+import MyltiRange from "../../components/MultiRange/MultiRange";
+import Pages from "../../components/pages/pages";
+import Search from "../../components/Search/Search";
+import TypeBar from "../../components/TypeBar/TypeBar";
+import { fetchBrands, fetchCategories, fetchProducts } from "../../http/deviceApi";
+import styles from "./Shop.scss"
 
 const Shop = observer(() => {
    const { device } = useContext(Context)

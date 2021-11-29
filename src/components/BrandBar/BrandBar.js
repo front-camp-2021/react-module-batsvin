@@ -1,8 +1,8 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { Context } from "..";
+import { Context } from "../..";
 import { useContext } from "react/cjs/react.development";
-
+import styles from "./BrandBar.scss"
 
 
 const BrandBar = observer(() => {
@@ -12,8 +12,8 @@ const BrandBar = observer(() => {
          {
             device.brands.map(brand =>
                <>
-                  <div class="aside__category-element" key={brand}>
-                     <div class="aside__category-label">
+                  <div className="aside__category-element" key={brand}>
+                     <div className="aside__category-label">
                         <input type="checkbox" id={brand} name={brand} onClick={() => device.setSelectedBrand(brand)} />
                         <label for={brand} >
                            <span>{brand}</span>

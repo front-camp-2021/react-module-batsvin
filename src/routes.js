@@ -1,5 +1,5 @@
 import Cart from "./pages/Cart";
-import Shop from "./pages/Shop";
+import Shop from "./pages/Shop/Shop";
 import Wishlist from "./pages/Wishlist";
 import { CART_ROUTE, SHOP_ROUTE, WISHLIST_ROUTE } from "./utils/consts";
 

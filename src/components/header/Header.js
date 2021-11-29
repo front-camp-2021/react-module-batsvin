@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../img/logo.png"
-import { SHOP_ROUTE } from "../utils/consts";
+import logo from "../../img/logo.png";
+import styles from "./Header.scss"
+import { SHOP_ROUTE } from "../../utils/consts";
 
 const Header = () => {
    return (

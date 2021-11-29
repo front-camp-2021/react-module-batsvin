@@ -1,6 +1,7 @@
 
 import React from "react";
-import Path2 from "../img/Path (2).svg"
+import Path2 from "../../img/Path (2).svg"
+import styles from './MainHeader.scss'
 
 const MainHeader = () => {
 

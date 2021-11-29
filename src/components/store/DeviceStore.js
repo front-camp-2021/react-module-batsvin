@@ -10,7 +10,11 @@ export default class DeviceStore {
       this._limit = 9
       this._selectedType = {}
       this._selectedBrand = {}
+      this._search = ''
       makeAutoObservable(this)
+   }
+   setSearch(search) {
+      this._search = search;
    }
    setCategories(types) {
       this._types = types;
@@ -34,6 +38,9 @@ export default class DeviceStore {
       this._selectedBrand = Brand
    }
 
+   get search() {
+      return this._search
+   }
    get types() {
       return this._types
    }

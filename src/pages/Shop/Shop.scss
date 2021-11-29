@@ -1,0 +1,80 @@
+main {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: stretch;
+   -ms-flex-align: stretch;
+   align-items: stretch;
+   hr {
+      border: 1px solid #d6d6d6;
+      margin-top: 20px;
+      margin-bottom: 33px;
+   }
+   .aside {
+      width: 30%;
+      padding-right: 30px;
+      &__hower {
+         background: #fff;
+         -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+         border: 0;
+         border-radius: 8px;
+         width: 47px;
+         height: 40px;
+         color: #000;
+      }
+      &__clear {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         background: #7e72f2;
+         border: 0;
+         -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+         border-radius: 8px;
+         height: 56px;
+         width: 100%;
+         margin-top: 28px;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         color: #fff;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 18px;
+         line-height: 21px;
+         font-family: Montserrat;
+      }
+      &__header {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+         justify-content: space-between;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         h5 {
+            font-weight: normal;
+            font-size: 18px;
+         }
+      }
+      &__characteristic {
+         background-color: #fff;
+         padding: 19px 45px;
+         -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.135216);
+         border: 0;
+         border-radius: 8px;
+         height: 86.5%;
+         h4 {
+            margin: 0 0 21px 0;
+            padding: 0;
+         }
+      }
+   }
+}

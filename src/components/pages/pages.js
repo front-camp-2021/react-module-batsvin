@@ -2,8 +2,7 @@ import { observer } from "mobx-react-lite";
 import React from "react";
 import { Context } from "../..";
 import { useContext } from "react/cjs/react.development";
-
-
+import styles from "./pages.scss";
 
 const Pages = observer(() => {
    const { device } = useContext(Context)
